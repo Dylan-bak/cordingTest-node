@@ -1,0 +1,21 @@
+{
+  "name": "tetris-project",
+  "version": "1.0.0",
+  "description": "Tetris project using Webpack and Babel",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "node dist/bundle.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC"
+}
