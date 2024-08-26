@@ -1,3 +1,19 @@
+// let dx= [1,-1] //이동이 필요할경우
+// for() { //도메인에 따라 for문
+//   count++
+
+//   dfs(초기값) 
+//   function dfs(value) {
+//     if(visited[i]) continue or return;
+
+//     for(let j=0; j<dx.length; j++) {
+//       ...
+//       dfs(newValue)
+//     }
+//   }
+// } 
+
+
 for (let i = 1; i < n + 1; i++) {
   if (visited[i]) continue;
   const innerGlobalVariables = dfs(i);
