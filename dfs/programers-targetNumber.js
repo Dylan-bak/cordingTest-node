@@ -1,6 +1,7 @@
-const filenameList = __filename.split("/");
-const [filename] = filenameList.pop().split(".");
-let filePath_local = `${filenameList.join("/")}/${filename}-data.txt`;
+const path = require('path');
+const filenameList = __filename.split(path.sep);
+const [filename] = path.basename(__filename).split(".");
+let filePath_local = path.join(...filenameList.slice(0, -1), `${filename}-data.txt`)
 let filePath_dev = `/dev/stdin`;
 const filePath = filePath_local;
 
