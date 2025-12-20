@@ -1,3 +1,5 @@
+//bfs는 큐와 방향배열[-1,1,0,0]을 이용해서 해결한다.
+
 const inputList = require("fs")
   .readFileSync(__dirname + "/softeer-recognizeObstacle-data1.txt")
   .toString()

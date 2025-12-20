@@ -42,7 +42,7 @@ for (let i = 1; i < n + 1; i++) {
 /** 1. 좌표 - grid 배열 or 성능을 위해 배열을 대신할 for문 */
 for (let i = 1; i < n + 1; i++) {
   /** 2. 좌표 백트래킹 - visited */
-  if (visited[i]) continue; // for문은 continue다 return은 for문을 종료시켜 버린다.
+  if (visited[i]) continue; // for문은 continue다 return 기준은 for문이 아니라 가까운 함수를 종료
   /** 3. dfs - dfs"내부전역" 데이터를 props로 내려주거나 리턴으로 받기 */
   const innerGlobalVariables = dfs(i);
   wayCount++;
